@@ -16,6 +16,7 @@ public class FixDebugThree3
       Scanner input = new Scanner(System.in);
       System.out.print("Enter name ");
       name = input.nextLine();
+      input.close();
       return name;
    }
    public static void displayGreeting(String name)
