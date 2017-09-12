@@ -1,4 +1,4 @@
-package tutorials;
+package exercises;
 
 import java.util.Scanner;
 
@@ -9,14 +9,20 @@ public class DemoRaise
 	public static void main(String[] args)
 	{
 		Scanner inputDevice = new Scanner(System.in);
+		
 		System.out.print("Input Salary: ");
 		double salary = inputDevice.nextDouble();
+		
+		System.out.print("Input Starting Wage: ");
+		double startingWage = inputDevice.nextDouble();
+		
 		inputDevice.close();
 		
 		System.out.println("Here is your raise: ");
 
 		predictRaise(salary);
-
+		predictRaise(startingWage);
+		
 	}
 	
 	public static void predictRaise(double salary)
