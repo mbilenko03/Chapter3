@@ -11,6 +11,9 @@ public class DelgadosTacos
 	public static void main(String[] args)
 	{
 		tacoTruck();
+		menu();
+		
+			
 		
 		DecimalFormat df = new DecimalFormat("0.00");
 	}
@@ -27,6 +30,15 @@ public class DelgadosTacos
 		double streetCorn = 3.00;
 		double pop = 2.50;
 		double water = 2.25;
+		
+		//display menu
+		System.out.println(" Burrito: " + burrito + "\n Street Taco: " + streetTaco + "\n Classic Taco: " + classicTaco
+				+ "\n Deluxe Taco: " + deluxeTaco + "\n Regular Fries: " + regularFries + "\n Cheese Fries: " + cheeseFries
+				+ "\n Corn Fries: " + cornFries + "\n Street Corn: " + streetCorn + "\n Pop: " + pop + "\n Water: " + water + "\n");
+		
+		//ask what they would like
+		System.out.println("What would you like from the menu: ");
+		
 	}
 	
 	public static void salesTax()
